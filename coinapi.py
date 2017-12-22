@@ -49,14 +49,13 @@ class coinapi:
         
         except:
             print("Error!")
-
+            
     def getCoins(user):     ##Get the Coins from a user.##
         try:
             with open(pathToUser + user + ".txt") as f:
-                for line in f:
-                    print(user + " has " + line +" coins!")
+                return '\n'.join(line for line in f)
         except:
-            print("Error!")
+            return "Error!"
 
     def addUser(user):      ##Add's user to your database.##
         try:
