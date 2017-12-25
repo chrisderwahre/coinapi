@@ -3,6 +3,7 @@
 import shutil
 import os
 import time
+import discord
 
 pathToUser = "" ##If empty, it will be in the installation path of the api.##
 pathToUserCache = "" ##If empty, it will be in the installation path of the api.##
@@ -70,3 +71,17 @@ class coinapi:
             os.remove(pathToUser + user + ".txt")
         except:
             print("Error!")
+            
+    def setCoins(user, coins):  ##Sets the user coins.##
+        try:
+            coinapi.removeCoin(user, coinapi.getCoins(user))
+            coinapi.addCoin(user, coins)
+        except:
+            print("Error!")
+            
+    def resetCoins(user):   ##Resets the coins of the user.##
+        try:
+            coinapi.setCoins(user, defaultCoins)
+        except:
+            print("Error!")
+                
