@@ -11,3 +11,7 @@ Download the coinapi here:
 [Coinapi v1.1](http://chrisderwahre.ga/downloads/coinapi_v1.1.zip "[Coinapi v1.1]")
 
 [Coinapi v1.0](http://chrisderwahre.ga/downloads/coinapi_v1.0.zip "[Coinapi v1.1]")
+
+View Log:
+
+[Log](/log.md "[Log]")
